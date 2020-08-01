@@ -1,0 +1,12 @@
+Objective
+
+At the objectives & principles working group it was decided to start a POC. The objective of the POC are as follows:
+- So give members a feel of how to work in an open source environment.
+- To start getting a idea of the different technologies that can be used for the actuarial library.
+
+Instructions
+
+The excel workbook has a valuation model for a simple life insurance contract. The objective is to replicate the model in your chosen technology.
+Also provided are a mortality table, same policy data, a yield curve and lapse rates. These files are all the inputs that are required for the model.
+
+Good luck and enjoy.
