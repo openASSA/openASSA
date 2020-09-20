@@ -1,0 +1,5 @@
+Policy_Index	Age	Annual_Premium	Sum_Assured	Duration_Inforce_Months
+1	35	3600	 1000000 	5
+2	50	5000	 1000000 	10
+3	60	6000	 1000000 	25
+4	45	400	 1000000 	15
