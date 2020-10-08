@@ -1,0 +1,3 @@
+[submodule "POC_Francois/src/QuantLib"]
+	path = POC_Francois/src/QuantLib
+	url = https://github.com/lballabio/QuantLib
