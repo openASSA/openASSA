@@ -1,0 +1,169 @@
+---
+  title: "Valuations"
+authors: "Jan Blomerus and Franco Marais"
+date: "24/08/2020"
+output: word_document
+---
+  
+  ```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning=FALSE, dev = 'win.metafile', fig.width = 6, fig.height = 5)
+```
+
+
+## Prerequisites ##
+
+```{r pre}
+library(readxl) #read excel
+library(openxlsx) #write xlsx
+library(dplyr) # select et al
+options(scipen=99) #removes scientific notation
+```
+## CONSTANTS ##
+
+```{r constants}
+
+#although the following is not strictly necessary, it is the current hard coded values
+MAX_AGE <- 108
+MAX_WX <- 9
+VAL_DATE <- as.Date('2020-09-01')
+EXP_PP <- 400
+EXP_INFL <- 0.06
+
+
+```
+
+
+
+## Data ##
+
+```{r data}
+
+file.name <- "val_inputTOT3.xlsx"
+policy.data <- read.xlsx(file.name, sheet="data") #data
+file.name <- "val_input3.xlsx"
+qx.data <- read.xlsx(file.name, sheet="qx") #qx data
+wx.data <- read.xlsx(file.name, sheet="wx") #withdrawal assumptions
+vt.data <- read.xlsx(file.name, sheet="vt") #interest assumptions
+
+
+```
+
+## Maximum projection term ##
+
+```{r Maximum proj}
+
+mycols <- c("sex"=1, "Term_if"=2, "age"=3, "Premium"=4, "Sum.Assured"=5, "proj_max"=6, "prod"=7, "Term"=8)
+policy.data2 <- as.matrix(policy.data[, names(mycols)])  #transformation into R matrix for faster calculation
+
+pro_max <- function(policy){
+ if (policy['prod'] == 2 || policy['prod'] == 4 )
+     projterm<-as.integer(policy['Term']-policy['Term_if'])  
+ else
+     projterm <- as.integer((MAX_AGE-policy['age'])*12)
+
+  return(projterm)
+}
+
+policy.data2[,"proj_max"]<- apply(policy.data2, 1, pro_max)  #setting the max term of projection on policy level
+
+table_x_max <- max(policy.data2[,"proj_max"])  #global maximum
+
+```
+
+## reserve function ##
+
+```{r v function}
+#ALL PRODUCTS
+prospv_res <- function(policy, val_r,exppp,expinfl,morta,wdlsa){
+  
+  #set the basis... 
+  mort <- ifelse(morta == 1, ifelse(policy[mycols["sex"]] == 0, 'UXM_D', 'UXF_D'), ifelse(policy[mycols["sex"]] == 0, 'UXM_DS', 'UXF_DS'))
+  mortbasis <- qx.data[, mort]
+  
+  w <- ifelse(wdlsa == 1, "uxw", "uxws")
+  wdlbasis <- wx.data[, w]
+  
+  v <- ifelse(val_r == 1, "vt", "vts")
+  vbasis <- vt.data[, v]
+  
+  j <- 1:policy[mycols["proj_max"]]
+  age <- policy[mycols["age"]] + (j-1)/12
+  uxd <- mortbasis[as.integer(age)]
+  term_wx <- policy[mycols["Term_if"]] + (j-1)
+  
+  uxw <- wdlbasis[min(as.integer(term_wx/12)+1,MAX_WX)]
+  if (policy[mycols["prod"]]==3)
+    uxw <- 0 
+  
+  aqx <- 1-exp((-uxd-uxw)/12)
+  aqxd <- uxd/(uxd + uxw) * aqx
+  awxd <- uxw/(uxd + uxw) * aqx
+  apx <- c(1, 1-aqx[-length(aqx)])
+  
+  tapx_func <- function(apx){
+    tapx <- c(1)
+    n <- length(apx)
+    for (i in 2:n){
+      tapx <- append(tapx, tapx[i-1]*apx[i])
+    }
+    return (tapx)
+  }
+  tapx <- tapx_func(apx)
+  vt <- vbasis[j]
+  
+  premium <- policy[mycols["Premium"]]
+  if (policy[mycols["prod"]]==3)
+    premium <- 0
+
+  expenses <- exppp/12*(1+expinfl)^((j-1)/12)
+  
+  death_claims <- policy[mycols["Sum.Assured"]] * aqxd
+  if (policy[mycols["prod"]]==3)
+    death_claims <- policy[mycols["Sum.Assured"]]/12 * apx
+  
+  if (policy[mycols["prod"]]==4) {
+    death_claims[policy[mycols["proj_max"]]] <- death_claims[policy[mycols["proj_max"]]] + policy[mycols["Sum.Assured"]] * apx[policy[mycols["proj_max"]]] }
+  
+  cf <- death_claims + expenses - premium
+  reserve <- sum(cf * tapx * vt)
+  return(reserve)
+}
+
+```
+
+## call reserving function ##
+
+```{r call reserving function}
+
+  #standard run
+  policy.data[,"Reserve"]<- apply(policy.data2, 1, prospv_res, 1, EXP_PP, EXP_INFL, 1, 1)
+
+  #discount rate sens
+  policy.data[,"Reserve_sens_d"]<-apply(policy.data2, 1, prospv_res, 2, EXP_PP, EXP_INFL, 1, 1)
+  
+  #expense pp sens
+  policy.data[,"Reserve_sens_e"]<-apply(policy.data2, 1, prospv_res, 1, EXP_PP*2, EXP_INFL, 1, 1)
+  
+  #expense infl sens
+  policy.data[,"Reserve_sens_ei"]<-apply(policy.data2, 1, prospv_res, 1, EXP_PP, EXP_INFL*2, 1, 1)
+  
+   #mort sens
+  policy.data[,"Reserve_sens_m"]<-apply(policy.data2, 1, prospv_res, 1, EXP_PP, EXP_INFL, 2, 1)
+  
+   #wdl sens
+  policy.data[,"Reserve_sens_w"]<-apply(policy.data2, 1, prospv_res, 1, EXP_PP, EXP_INFL, 1, 2)
+  
+
+
+
+```
+
+## write data ##
+
+```{r output}
+policy.data[,"proj_max"]<-policy.data2[,"proj_max"]
+write.xlsx(policy.data, "val_output23.xlsx")
+
+
+```
+
