@@ -5,6 +5,7 @@
 #  0.667037 seconds (1.11 M allocations: 52.117 MiB, 0.90% gc time)
 
 import Base.Threads.@spawn
+import XLSX
 using XLSX
 PROJECTION = 2140
 
@@ -148,7 +149,7 @@ function readExcelSheet(filename, sheet_name)
 end
 
 function main()
-    filepath = "openASSA/POC1_Lavesh"
+    filepath = "C:/Users/saa2005/github/openASSA/POC1_Lavesh"
     filename = "Simple Life Model_Julia.xlsm"
     filename = joinpath(filepath, filename)
 
@@ -172,7 +173,7 @@ function main()
         end
     end
     policy_values = zeros(Float64, size(policies)[1])
-    @spawn @time get_model(policy_values, policies, mortality, lapse, yieldc)
+    policy_values = @spawn @time get_model(policy_values, policies, mortality, lapse, yieldc)
     println("policy_values : ", policy_values)
 end
 
