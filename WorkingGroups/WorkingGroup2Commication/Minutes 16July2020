@@ -1,0 +1,18 @@
+HI folks,
+
+Thanks for attending the session today. Below is a summary.
+•	We decided to use https://github.com for a source control platform.
+•	A new "organisation" at https://github.com/openASSA has already been created, but no source code repositories have been created yet. Being a 'member' of this Github organisation would enable additional admin privileges like adding other members, change the repo settings, etc. In order to contribute code to the eventual project, membership of the organisation is not a requirement. (If anyone wants to join the organisation in order to assist with the admin, please send me your Github username.)
+•	Using Github implies that we will use git as a version control system.
+•	Setting up a repository (even if empty) with a preliminary README file is a priority.
+•	Github will also be used for discussions, mostly targeted discussions around specific developments (e.g. a new feature or a bug).
+•	For more general discussions (user support and queries, or even just general banter) that are not targeted on a specific topic, a mailing list or a Slack channel was suggested. It was decided that initially we'll try out a Slack channel. (I've set up a new Slack workspace for openASSA. Feel free to join and distribute the link)
+•	When code contributions are submitted, it will be subject to a peer review process using Github. Code review will be a shared responsibility and review comments will be publicly visible on the Github pull request.
+•	A continuous integration process with automated testing will be set up.
+•	There was a discussion around proposed IDEs to be used. Examples are Visual Studio, Visual Studio Code, PyCharm, Atom. The proposed IDE will eventually depend on the tech stack that is chosen. Even so, it will be only a proposal/suggestion and code contributors will be free to use any editor of their choice.
+•	It was mentioned that this project is still in its early phase and it should be allowed to grow organically and that we shouldn't feel bound by the tools mentioned above.
+
+Please feel free to suggest any other tools, especially those that aid in communication in order to build this community.
+
+Thanks and have a lekker weekend!
+Francois Botha
