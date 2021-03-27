@@ -1,0 +1,27 @@
+Date- 28/07/2020
+
+Hi Everyone
+
+Thank you for participating in the kick off sessions for the various working groups. It is great to see people excited about the project. If you were not able to make the sessions or have just joined then down worry below is the summary of the key decisions and actions.
+
+Working Group 1 - Principles & Objectives (Chair - Sean Arthur)
+
+•	There was a discussion around whether the solution should focus on developing a library or a full software package. In general it was felt that building a complete package including a user interface was a project on its own and could be built on top of a library and that therefore the library would be a natural first step. It was also considered that we would need additional skill sets to build a user interface. It was therefore agreed that we would start with a library.
+•	After a fair amount of discussion it was decided that the best way to start would be with a simple problem statement that people could apply their mind to, and that we could use this as a POC. The decision was to start a POC of a cashflow model for a simple life insurance contract.
+•	A view was expressed that some of the members have experience in building actuarial models but not much experience with open source tech so may not be able to contribute immediately to the POC. It was therefore agreed in parallel to carry on with defining the broad objective and principles.
+
+Working Group 2 - Ways of working & Communication (Chair - Francois Botha)
+
+•	We decided to use https://github.com for a source control platform.  A new "organisation" at https://github.com/openASSA has already been created, but no source code repositories have been created yet. Being a 'member' of this Github organisation would enable additional admin privileges like adding other members, change the repo settings, etc. In order to contribute code to the eventual project, membership of the organisation is not a requirement.
+•	Using Github implies that we will use git as a version control system.
+•	For more general discussions (user support and queries, or even just general banter) that are not targeted on a specific topic, a mailing list or a Slack channel was suggested. It was decided that initially we'll try out a Slack channel. (Please click on the link to join https://communityinviter.com/apps/openassa/openassa )
+
+Working Group 3 (Chair - Nick Harrison)
+•	It was decided that an MIT-style copywrite license would be used for the project and further investigation is required  on how to setup the license.
+•	It was decided to explore the use of a contributor license agreement to mitigate IP infringement.
+•	Investigate anit-trust legislation to ensure we can avoid anti-competitive behaviour.
+•	Investigate topics around employer IP to give guidelines on boundaries.
+I encourage everyone to join the slack channel as I would like to start switching to it for general communication and updates. The next time you hear from me hopefully it will be with a POC problem statement.
+
+Regards
+Sean
