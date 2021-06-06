@@ -1,1 +1,79 @@
-<mxfile host="app.diagrams.net" modified="2021-06-06T18:55:09.862Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36" etag="TZ1S2eKIKA4VTwR8UA1A" version="14.7.6" type="github"><diagram name="Page-1" id="58cdce13-f638-feb5-8d6f-7d28b1aa9fa0">7Vtdk6MoFP01eZwuQfHjcTrbPfuyVVvVVbszj0RJYo1KipBJZ3/9YsSooMZ2NLGT5KXlgoj3nANXuD0z5/H7N4Y3679oQKIZNIL3mfnHDEJgGa74k1oOmcWxpGHFwkA2Kgxv4X9EGg1p3YUB2VYackojHm6qRp8mCfF5xYYZo/tqsyWNqk/d4BXRDG8+jnTrv2HA19IKDKOo+JOEq7V8tItkxQL7P1eM7hL5vIQmJKuJcd6NbLpd44DuSybzZWbOGaU8u4rf5yRK3Zp7LLvvtaH2NGRGEt7lBtOFCw8sEAJgERhL54vs4ReOdtINcqD8kPtF9CAgEIXnNY8jYQPiUrzIJq3fcsz4G8c8rV+GUTSnEWXHG03j+Esbc0Z/klLNcilrjl4jQdFp5p20yqdx6MvrCC9I9Hxyc97T0dHisTThrzgOo5R4/xAW4ARLs2QZgLJcNzochatE2HzhQyIqn4OQCX6FNDVu6S6F8Fl3dO45wjh5L5mk478RGhPODqJJXmtKEhzyMsrK+4JteZN1iWe5DUt+r049F0CLC4l1R9yRhvtX8cq/Qn7Q8K9itF+HnLxtsJ/W7sVMUOUFZr70ObR0RizFz29nxEQ4MADe0KribeYTXQlvAGsAt8cA3H4AfmnAT+BeBHA/IHaAA9e2MHAw/mLqE3kg1jtZpIyv6YomOHoprGVcyXvIv5euf6SoPEGUFhMxtu9K+Ucn1EgSfE2X6nQEG5JkFomX20qTjnjnuEZkydtQFfM680mDVhwZfWC2IryhjZe1SX3ayg1GIix0Vo0xBlW281D22Mq2FGVD45rKtoZRtvHkoLK4y8oGFVk/oRsRttdB2PbQwj7eKpyDD6UGGxomfFvq+e/UUDDOdZW1BBkKZ7IeCwadhtaPVKB9vSDRgu7PEaqyVDiohVDOPTEqj/smsFZ4j7Vi7LXC8aYU9ucPfyA+HuIIXhNxdSJHvefxTzgfQ2wufIgM7C8NGzjBtEP3ptGWxDkXTsFhIqiporjdh3GEj1CckeYgm2oZnPlGKPg4jEMqzEMVgVmevnPm1W2dneL0QRWWy/sGJdbE0NYYyK3RnOazyYRA7mNB/OCC2Dhtdd8ZA1UB27p+R1sgobX0bDcAhkecwF5Y+cZY7yOPVJO3deAxBuSuArmrx0SjHXaok4931/O11sbsECO5k4mRfleu93tC+fsidqajYQB02O9IxE0BVWvQBa8WdDWM9hF0XXAFtozqtsQlgy6dADWz9j3LF+rybQpUJyBf+JDvxeWL3Ct+M6mj1z+alwzHREM/D7p2cfR6bHCHm1VKmldNlhcwUA1wjoVGQK792+fsYfHUJ98uZ3R1odLop769ATuzu/jJECtyhWZaRkE/NO0OaDpDo9nrDN9UZoJ8ZhjqDF+nTvs30vnMkCKxy5l4YleRxFLOYQG9WdXl3AiNwiqNNtpxonqIkb2IvKvg00fpiZTvA+gpuePn6OyNTef2b4YPJDrBxkQnNYVxejNoPz6jz7XmjZKsis6sP/eC8/Xyj3SgB8td7Jq6eDOZZjmKlw18+iPdnocyTP55FWp4V1BfLwFd3R2yW5H+PFt7jeFv57CyVzrShcJKU8lhR4ay3dAQVp7tyHSV+DR7W62jIbKUnduj2oNpk2SaeytMq/8I6v+lXBNxNpFxdKIhhWigL9GUjkxvKKKJYvHf3Vnz4r/nzZf/AQ==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-06-06T19:16:16.164Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36" etag="lhGqKB8HSwP3eq8bW5JV" version="14.7.6" type="github">
+  <diagram name="Page-1" id="58cdce13-f638-feb5-8d6f-7d28b1aa9fa0">
+    <mxGraphModel dx="946" dy="557" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2a3bc250acf0617d-8" value="frame" style="shape=umlFrame;whiteSpace=wrap;html=1;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" parent="1" vertex="1">
+          <mxGeometry x="40" y="10" width="1050" height="745" as="geometry" />
+        </mxCell>
+        <mxCell id="Wim0ee7d1L9D6-eXyLlQ-1" value="Actuarial Modeller" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="115" width="30" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="Wim0ee7d1L9D6-eXyLlQ-3" value="Actuarial User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="280" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Wim0ee7d1L9D6-eXyLlQ-4" value="Actuarial Manager" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="430" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Wim0ee7d1L9D6-eXyLlQ-5" value="Perform selected actuarial calculations using selected products over specified input data&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="240" width="180" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="Wim0ee7d1L9D6-eXyLlQ-6" value="Develop product rules and data requirements over which the actuarial calculations can be performed." style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="100" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Wim0ee7d1L9D6-eXyLlQ-7" value="View and check results" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="400" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Wim0ee7d1L9D6-eXyLlQ-8" value="Approve permissions to perform developer or users tasks" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="550" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Wim0ee7d1L9D6-eXyLlQ-14" value="name" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="Wim0ee7d1L9D6-eXyLlQ-1" target="Wim0ee7d1L9D6-eXyLlQ-6">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="110" y="220" as="sourcePoint" />
+            <mxPoint x="270" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Wim0ee7d1L9D6-eXyLlQ-15" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;" connectable="0" vertex="1" parent="Wim0ee7d1L9D6-eXyLlQ-14">
+          <mxGeometry x="-1" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Wim0ee7d1L9D6-eXyLlQ-16" value="name" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="Wim0ee7d1L9D6-eXyLlQ-3" target="Wim0ee7d1L9D6-eXyLlQ-5">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="380" y="270" as="sourcePoint" />
+            <mxPoint x="540" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Wim0ee7d1L9D6-eXyLlQ-17" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;" connectable="0" vertex="1" parent="Wim0ee7d1L9D6-eXyLlQ-16">
+          <mxGeometry x="-1" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Wim0ee7d1L9D6-eXyLlQ-18" value="name" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Wim0ee7d1L9D6-eXyLlQ-3" target="Wim0ee7d1L9D6-eXyLlQ-7">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="380" y="270" as="sourcePoint" />
+            <mxPoint x="540" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Wim0ee7d1L9D6-eXyLlQ-19" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;" connectable="0" vertex="1" parent="Wim0ee7d1L9D6-eXyLlQ-18">
+          <mxGeometry x="-1" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Wim0ee7d1L9D6-eXyLlQ-20" value="name" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="Wim0ee7d1L9D6-eXyLlQ-4">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="380" y="270" as="sourcePoint" />
+            <mxPoint x="270" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Wim0ee7d1L9D6-eXyLlQ-21" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;" connectable="0" vertex="1" parent="Wim0ee7d1L9D6-eXyLlQ-20">
+          <mxGeometry x="-1" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Wim0ee7d1L9D6-eXyLlQ-22" value="name" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Wim0ee7d1L9D6-eXyLlQ-4" target="Wim0ee7d1L9D6-eXyLlQ-8">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="380" y="450" as="sourcePoint" />
+            <mxPoint x="540" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Wim0ee7d1L9D6-eXyLlQ-23" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;" connectable="0" vertex="1" parent="Wim0ee7d1L9D6-eXyLlQ-22">
+          <mxGeometry x="-1" relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
